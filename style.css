@@ -78,6 +78,7 @@
     margin: auto;
     background: url('image/66b946742c4febae8ab01b1b6a9f3294.jpg') blueviolet no-repeat center;
     background-size: cover;
+    image-rendering: crisp-edges;
     border: 4px solid blueviolet;
     position: absolute;
     top: 6%;

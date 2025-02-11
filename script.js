@@ -61,10 +61,10 @@ document.querySelector('input[type="text"]').addEventListener('input', function 
 
 document.getElementById('downloadBtn').addEventListener('click', function () {
     const container = document.querySelector('.container');
-    html2canvas(container).then(canvas => {
+    html2canvas(container, { scale: 3, useCORS: true }).then(canvas => {
         const link = document.createElement('a');
-        link.href = canvas.toDataURL('image/jpeg'); // JPG ফরম্যাটে সেভ করার জন্য
-        link.download = 'container-snapshot.jpg'; 
+        link.href = canvas.toDataURL('image/jpeg', 1.0); 
+        link.download = 'container-high-quality.jpg';
         link.click();
     });
 });
