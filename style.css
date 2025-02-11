@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.uploadFile {
+    text-align: center;
+    margin-top: 4px;
+    position: relative;
+    z-index: 999;
+}
+
+.modifySize button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-color: gray;
+    top: 0%;
+    left: 35%;
+    transform: translate(-29%, -6%);
+}
+.grayWhiteBackground{
+    overflow: hidden;
+    background-color: #b5c327;
+    background-image: linear-gradient(315deg, #b5c327 0%, #ffc907 74%);
+    background: url('image/pexels-pixabay-416985_optimized_500.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logoArea {
+    width: 137px;
+    position: relative;
+    top: -4%;
+    left: -7%;
+}
+.Date {
+    position: relative;
+    top: 5%;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.trinagle {
+    border-top: 90px solid transparent;
+    border-bottom: 106px solid transparent;
+    border-right: 130px solid rgb(128, 0, 0);
+    position: relative;
+    top: -58%;
+    left: 10%;
+}
+.logoArea img {
+    width: 100%;
+}
+
+.redBackground{
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+    background: url('image/river_optimized_500.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.redBackground .display {
+    height: 294px;
+    width: 85%;
+    margin: auto;
+    background: url('image/66b946742c4febae8ab01b1b6a9f3294.jpg') blueviolet no-repeat center;
+    background-size: cover;
+    border: 4px solid blueviolet;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px 1px 1px 45px;
+    border-radius: 1px 79px 1px 89px;
+}
+.redBackground .title {
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    width: 100%;
+}
+.redBackground .title h2 {
+    color: white;
+    font-family: 'Lucida Sans',sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-color:#556;
+    --pattern-size: 5rem;
+    background:
+      linear-gradient(to bottom, #0000, #000c),
+      linear-gradient(to bottom right, #fff1 50%, transparent 50%),
+      linear-gradient(to bottom left, #fff1 50%, transparent 50%),
+      #333;
+    background-size: cover, var(--pattern-size) var(--pattern-size), var(--pattern-size) var(--pattern-size), cover;
+    background-position: top center;
+    width: 100%;
+    padding: 3px 0px 2px 0px;
+}
+.container .details {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background: yellow;
+    padding: 3px 6px 3px 7px;
+    border-radius: 5%;
+}
