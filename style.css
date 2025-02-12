@@ -26,8 +26,9 @@
 }
 .grayWhiteBackground{
     overflow: hidden;
-    background-color: green;
-    background-image: linear-gradient(314deg, green 0green 74%);
+    background-color: #63a91f;
+    background-image: linear-gradient(314deg, #63a91f 0%, #1a512e 74%);
+    
     
     
     background-size: cover;
@@ -81,8 +82,9 @@
     position: relative;
     height: 300px;
     width: 100%;
-    background-color:darkgreen;
-
+    background-color: #015d00;
+    background-image: linear-gradient(314deg, #015d00 0%, #04bf00 74%);
+    
     
     
     /* background-color: #166d3b;
