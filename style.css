@@ -29,8 +29,6 @@
     background-color: #63a91f;
     background-image: linear-gradient(314deg, #63a91f 0%, #1a512e 74%);
     
-    
-    
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -40,11 +38,13 @@
 
 }
 
-.logoArea {
-    width: 137px;
+.grayWhiteBackground .logoArea {
+    width: 30%;
     position: relative;
-    top: -4%;
-    left: -7%;
+    top: 33%;
+    left: 0%;
+    scale: 1.8;
+    z-index: 999;
 }
 .grayWhiteBackground .explain{
     font-size: 22px;
@@ -52,13 +52,14 @@
 .grayWhiteBackground .explain button {
     font-size: 13px;
     /* padding: 4px; */
-    margin-top: 10px;
+    margin-top: 21px;
     padding: 6px 7px;
     /* color: yellow; */
     color: black;
     /* font-weight: bold; */
     border-radius: 8px;
     border: 3px solid gold;
+    margin-left: 23px;
 }
 .Date {
     position: relative;
@@ -109,7 +110,7 @@
 .redBackground .display img {
     min-height: 85%;
     max-height: 100%;
-    border-radius: 8px 60px 8px 60px;
+    border-radius: 60px 10px 60px 10px;
     min-width: 85%;
     max-width: 100%;
 }
@@ -137,10 +138,16 @@
     padding: 3px 0px 2px 0px;
 }
 .container .details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     position: absolute;
     bottom: 0%;
     right: 0%;
     background: yellow;
-    padding: 3px 6px 3px 7px;
+    padding: 0px 4px 0px 7px;
     border-radius: 5%;
+    align-items: center;
+    font-size: 13px;
+    font-family: sans-serif;
 }

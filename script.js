@@ -92,7 +92,7 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
     html2canvas(container, { scale: 3, useCORS: true }).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/jpeg', 1.0); 
-        link.download = 'container-high-quality.jpg';
+        link.download = 'Daily-TiTas-News.jpg';
         link.click();
     });
 });
