@@ -26,8 +26,9 @@
 }
 .grayWhiteBackground{
     overflow: hidden;
-    background-color: #166d3b;
-    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+    background-color: green;
+    background-image: linear-gradient(314deg, green 0green 74%);
+    
     
     background-size: cover;
     background-position: center;
@@ -80,8 +81,9 @@
     position: relative;
     height: 300px;
     width: 100%;
-    background-color: #63a91f;
-    background-image: linear-gradient(314deg, #63a91f 0%, #1a512e 74%);
+    background-color:darkgreen;
+
+    
     
     /* background-color: #166d3b;
     background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%); */
@@ -103,7 +105,7 @@
 .redBackground .display img {
     min-height: 85%;
     max-height: 100%;
-    border-radius: 1px 79px 1px 89px;
+    border-radius: 8px 60px 8px 60px;
     min-width: 85%;
     max-width: 100%;
 }
