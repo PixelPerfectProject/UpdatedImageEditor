@@ -125,10 +125,9 @@
     font-family: 'Lucida Sans',sans-serif;
     font-size: 24px;
     text-align: center;
-    background-color:#556;
+    background-color: #556;
     --pattern-size: 5rem;
-    background:
-      linear-gradient(to bottom, #0000, #000c),
+    background: linear-gradient(to bottom, #0000, #000c),
       linear-gradient(to bottom right, #fff1 50%, transparent 50%),
       linear-gradient(to bottom left, #fff1 50%, transparent 50%),
       #333;
@@ -136,6 +135,8 @@
     background-position: top center;
     width: 100%;
     padding: 3px 0px 2px 0px;
+    text-shadow: 3px 4px 4px green;
+    color: yellow;
 }
 .container .details {
     display: flex;
