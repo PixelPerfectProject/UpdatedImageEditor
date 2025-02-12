@@ -1,3 +1,23 @@
+let display = document.querySelector('.display');
+let moveLeft = document.getElementById('moveLeft');
+let moveRight = document.getElementById('moveRight');
+
+let leftPercent = 50; // ডিফল্ট অবস্থান 0%
+
+moveLeft.addEventListener('click', function() {
+    if (leftPercent > 0) { // সীমা নির্ধারণ
+        leftPercent -= 1; // ১% কমবে
+        display.style.left = `${leftPercent}%`;
+    }
+});
+
+moveRight.addEventListener('click', function() {
+    if (leftPercent < 100) { // সীমা নির্ধারণ
+        leftPercent += 1; // ১% বাড়বে
+        display.style.left = `${leftPercent}%`;
+    }
+});
+
 function updateDate() {
     const dateElement = document.querySelector('.Date');
     const now = new Date();
@@ -20,9 +40,17 @@ document.getElementById('imageUpload').addEventListener('change', function(event
 
         reader.onload = function(e) {
             const displayDiv = document.querySelector('.display');
-            displayDiv.style.background = `url('${e.target.result}') blueviolet no-repeat center`;
-            displayDiv.style.backgroundSize = "cover";
-            displayDiv.textContent = ''; // টেক্সট মুছে ফেলব যাতে ইমেজ দেখতে ভালো লাগে
+            
+            // আগের ইমেজ মুছে ফেলা
+            displayDiv.innerHTML = '';
+
+            // নতুন ইমেজ ট্যাগ তৈরি করা
+            const newImage = document.createElement('img');
+            newImage.src = e.target.result;
+            newImage.classList.add('uploadedImage'); // CSS এর জন্য ক্লাস
+            
+            // display ডিভের মধ্যে ইমেজ যোগ করা
+            displayDiv.appendChild(newImage);
         }
 
         reader.readAsDataURL(file);

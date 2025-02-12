@@ -26,9 +26,9 @@
 }
 .grayWhiteBackground{
     overflow: hidden;
-    background-color: #b5c327;
-    background-image: linear-gradient(315deg, #b5c327 0%, #ffc907 74%);
-    background: url('image/pexels-pixabay-416985_optimized_500.jpg');
+    background-color: #166d3b;
+    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+    
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -44,12 +44,25 @@
     top: -4%;
     left: -7%;
 }
+.grayWhiteBackground .explain{
+    font-size: 22px;
+}
+.grayWhiteBackground .explain button {
+    font-size: 16px;
+    /* padding: 4px; */
+    margin-top: 10px;
+    padding: 6px 7px;
+    /* color: yellow; */
+    color: black;
+    /* font-weight: bold; */
+}
 .Date {
     position: relative;
     top: 5%;
-    color: white;
+    color: black;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 12px;
+    font-family: monospace;
 }
 .trinagle {
     border-top: 90px solid transparent;
@@ -67,25 +80,32 @@
     position: relative;
     height: 300px;
     width: 100%;
-
-    background: url('image/river_optimized_500.jpg');
+    background-color: #63a91f;
+    background-image: linear-gradient(314deg, #63a91f 0%, #1a512e 74%);
+    
+    /* background-color: #166d3b;
+    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%); */
     background-size: cover;
     background-position: center;
 }
 .redBackground .display {
-    height: 294px;
-    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 348px;
+    width: 93%;
     margin: auto;
-    background: url('image/66b946742c4febae8ab01b1b6a9f3294.jpg') blueviolet no-repeat center;
-    background-size: cover;
-    image-rendering: crisp-edges;
-    border: 4px solid blueviolet;
     position: absolute;
-    top: 6%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px 1px 1px 45px;
+    top: 10%;
+    left: 50%;
+}
+.redBackground .display img {
+    min-height: 85%;
+    max-height: 100%;
     border-radius: 1px 79px 1px 89px;
+    min-width: 85%;
+    max-width: 100%;
 }
 .redBackground .title {
     margin: auto;

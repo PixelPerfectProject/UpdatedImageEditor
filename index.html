@@ -7,40 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
     <div class="uploadFile">
         <input type="file" id="imageUpload" accept="image/*"><br>
         <input type="color" id="colorInput"> <input type="text" placeholder="Enter text">
+
         <div class="modifySize">
             <button id="increaseFont">Increase</button>
             <button id="decreaseFont">Decrease</button>
         </div>
+        <div class="moveButtons">
+            <button id="moveLeft">Left</button>
+            <button id="moveRight">Right</button>
+        </div>
+        
         <button id="downloadBtn">Download as Image</button>
-    </div>
-    
-    
+    </div><br><br>
 
-                                <br><br>
+
     <div class="container">
         <div class="grayWhiteBackground">
             <div class="logoArea">
                 <img src="image/daily titas news.png" alt="">
             </div>
-            <div class="Date"></div>
+            <h5 class="explain"><button>বিস্তারিত কমেন্টে</button></h5>
+            <!-- <div class="Date"></div> -->
             <div class="trinagle"></div>
         </div>
         <div class="redBackground">
-            <div class="display"></div>
+            <div id="display" class="display">
+                <!-- <img class="image" src="image/Ladybower-Walk-07.jpg" alt=""> -->
+            </div>
             <div class="title">
                 <h2>এখানে আপনার টাইটেল লিখুন </h2>
             </div>
         </div>
         <div class="details">
-            <h5>বিস্তারিত কমেন্টে</h5>
+            <div class="Date"></div>
         </div>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
